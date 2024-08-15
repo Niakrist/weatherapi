@@ -19,7 +19,7 @@ export const weatherDataObject = {
   },
   visibility: {
     name: "Видимость",
-    icon: "/public/visibility.svg",
+    icon: "./public/visibility.svg",
     value: 28,
     designation: "км",
     info: "Нормальная",
@@ -28,7 +28,7 @@ export const weatherDataObject = {
   },
   sunrise: {
     name: "Рассвет",
-    icon: "/public/sunrise.svg",
+    icon: "./public/sunrise.svg",
     value: "8:42",
     designation: "",
     info: "Прошло: ",
