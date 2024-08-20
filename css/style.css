@@ -28,6 +28,7 @@
   --font-weight-bold: 700;
   --line-height-primary: 1.2;
   --line-height-one: 1;
+  --line-height-slider: 1.25;
   --line-height-additional: 1.33333;
 
   /* colors */
@@ -35,7 +36,10 @@
   --text-color-additional: #393939;
   --text-color-placeholder: #707070;
   --text-color-link: #a6a6a6;
-  --weather-color: #f5f4f4;
+  --white-color: #f5f4f4;
+
+  --bg-light-transparent: rgba(245, 244, 244, 0.4);
+  --bg-form-active: rgba(218, 218, 218, 1);
 }
 
 *,
@@ -126,12 +130,12 @@ a {
   justify-content: space-between;
   gap: 16px;
   padding: 12px 16px;
-  background-color: rgba(245, 244, 244, 0.4);
+  background-color: var(--bg-light-transparent);
   transition: background-color 0.3s ease;
 }
 
 .saerch-form__label:hover {
-  background-color: rgba(218, 218, 218, 1);
+  background-color: rvar(--bg-form-active);
 }
 
 .saerch-form__input {
@@ -150,8 +154,8 @@ a {
 }
 
 .saerch-form__input:focus {
-  outline: 300px solid rgba(218, 218, 218, 1);
-  background-color: rgba(218, 218, 218, 1);
+  outline: 300px solid var(--bg-form-active);
+  background-color: var(--bg-form-active);
 }
 
 .saerch-form__btn {
@@ -189,7 +193,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  color: var(--weather-color);
+  color: var(--white-color);
 }
 
 .info-weather {
@@ -257,7 +261,7 @@ a {
   padding: 16px;
   width: 158px;
   height: 196px;
-  background: rgba(245, 244, 244, 0.4);
+  background: var(--bg-light-transparent);
 }
 
 .details-item__info-all {
@@ -313,7 +317,7 @@ a {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  background: var(--weather-color);
+  background: var(--white-color);
 }
 
 .details-item__range--barometr {
@@ -338,7 +342,7 @@ a {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  background: var(--weather-color);
+  background: var(--white-color);
 }
 
 .details-item__desc {
@@ -374,7 +378,7 @@ a {
 
 .menu-slider {
   margin-bottom: 32px;
-  color: var(--weather-color);
+  color: var(--white-color);
   font-weight: var(--font-weight-bold);
 }
 
@@ -386,7 +390,7 @@ a {
 .menu-slider__link {
   color: var(--text-color-link);
   font-size: var(--font-size-small-title);
-  line-height: 1.25;
+  line-height: var(--line-height-slider);
   position: relative;
   transition: color 0.1s ease;
 }
@@ -398,18 +402,18 @@ a {
   bottom: -5px;
   height: 2px;
   width: 0;
-  background-color: var(--weather-color);
+  background-color: var(--white-color);
   transition: width 0.1s ease;
 }
 
 .menu-slider__link:hover,
 .menu-slider__link:hover::before {
   width: 100%;
-  color: var(--weather-color);
+  color: var(--white-color);
 }
 
 .menu-slider__link--active {
-  color: var(--weather-color);
+  color: var(--white-color);
   position: relative;
 }
 .menu-slider__link--active::before {
@@ -419,7 +423,7 @@ a {
   bottom: -5px;
   height: 2px;
   width: 100%;
-  background-color: var(--weather-color);
+  background-color: var(--white-color);
 }
 
 .slider__weather {
@@ -448,7 +452,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  background: rgba(245, 244, 244, 0.4);
+  background: var(--bg-light-transparent);
   border-radius: 8px;
   min-width: 156px;
   flex-shrink: 0;
@@ -459,7 +463,7 @@ a {
   padding: 12px 16px;
   min-width: 56px;
   border-radius: 8px;
-  background-color: rgba(245, 244, 244, 0.4);
+  background-color: var(--bg-light-transparent);
   outline: none;
   border: none;
   cursor: pointer;
@@ -480,7 +484,7 @@ a {
   color: var(--text-color-primary);
   font-size: var(--font-size-small-title);
   font-weight: var(--font-weight-primary);
-  line-height: 1.25;
+  line-height: var(--line-height-slider);
 }
 .weather-slider__img {
   width: 32px;
@@ -491,7 +495,7 @@ a {
   color: var(--text-color-primary);
   font-size: var(--font-size-small-title);
   font-weight: var(--font-weight-primary);
-  line-height: 1.25;
+  line-height: var(--line-height-slider);
 }
 
 .footer {
@@ -502,9 +506,9 @@ a {
 .footer__text {
   font-weight: var(--font-weight-primary);
   font-size: var(--font-size-small-title);
-  line-height: 1.25;
+  line-height: var(--line-height-slider);
   text-align: center;
-  color: var(--weather-color);
+  color: var(--white-color);
 }
 
 .footer__text a {
