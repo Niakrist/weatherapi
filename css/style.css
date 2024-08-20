@@ -395,7 +395,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -5px;
   height: 2px;
   width: 0;
   background-color: var(--weather-color);
@@ -404,7 +404,7 @@ a {
 
 .menu-slider__link:hover,
 .menu-slider__link:hover::before {
-  width: 84px;
+  width: 100%;
   color: var(--weather-color);
 }
 
@@ -416,9 +416,9 @@ a {
   content: "";
   position: absolute;
   left: 1px;
-  bottom: -4px;
+  bottom: -5px;
   height: 2px;
-  width: 84px;
+  width: 100%;
   background-color: var(--weather-color);
 }
 
