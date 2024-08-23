@@ -38,3 +38,6 @@ menuSliderList.addEventListener("click", (e) => {
     });
   }
 });
+
+const el = document.querySelector(".details-item__range");
+console.log(el);

@@ -14,8 +14,8 @@ export const weatherDataObject = {
     value: 761,
     designation: "",
     info: "Повышенное",
-    min: 0,
-    max: 1000,
+    min: 700,
+    max: 810,
   },
   visibility: {
     name: "Видимость",
@@ -24,7 +24,7 @@ export const weatherDataObject = {
     designation: "км",
     info: "Нормальная",
     min: 0,
-    max: 100,
+    max: 109,
   },
   sunrise: {
     name: "Рассвет",
@@ -51,6 +51,7 @@ export const weatherDataObject = {
   },
 };
 
+//Данный массив пока нигде не используется
 export const weatherDataArray = [
   {
     id: "humidity",

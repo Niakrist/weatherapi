@@ -48,6 +48,12 @@ export const searchCity = () => {
         searchCityInpit.style.color = "";
         saerchForm.style.outline = "";
       }, 500);
+    } else {
+      e.preventDefault();
+      console.log(
+        "Отправка формы заблокирована для вывода текста в консоль из первой таски"
+      );
+      console.log(searchCityInpit.value);
     }
   });
 };

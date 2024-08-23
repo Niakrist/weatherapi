@@ -1,4 +1,11 @@
 import { weatherDataObject } from "./mockData/mockWeatherData.js";
+
+const setPositionRound = (min, max, val) => {
+  const onePercent = (Number(max) - Number(min)) / 100;
+  const interval = Number(val) - Number(min);
+  return interval / onePercent;
+};
+
 // Функции для создания карточки метеоданных
 export const createCardWeatherData = (data, index) => {
   const detailsItem = document.createElement("li");
@@ -38,13 +45,27 @@ export const createCardWeatherData = (data, index) => {
   }
 
   if (weatherDataObject[data].max) {
-    const detailsItemRange = document.createElement("input");
-    detailsItemRange.className =
-      index % 2 !== 0 ? "details-item__range--barometr" : "details-item__range";
-    detailsItemRange.type = "range";
-    detailsItemRange.min = weatherDataObject[data].min;
-    detailsItemRange.max = weatherDataObject[data].max;
+    const position = setPositionRound(
+      weatherDataObject[data].min,
+      weatherDataObject[data].max,
+      weatherDataObject[data].value
+    );
+
+    const detailsItemRange = document.createElement("div");
+    detailsItemRange.className = "details-item__range";
+    detailsItemRange.dataset.min = weatherDataObject[data].min;
+    detailsItemRange.dataset.max = weatherDataObject[data].max;
     detailsItemRange.value = weatherDataObject[data].value;
+    detailsItemRange.style.cssText =
+      index % 2 === 0
+        ? `background: -webkit-radial-gradient(${position}% 50%, circle, transparent 6px, rgba(218, 218, 218, 0.4) 0)`
+        : `background: -webkit-radial-gradient(${position}% 50%, circle, transparent 6px, rgba(84, 84, 84, 0.4) 0%, rgba(138, 138, 138, 0.4) 45.12%, #DADADA 100%, rgba(218, 218, 218, 0.4) 100%)`;
+
+    const detailsItemRound = document.createElement("div");
+    detailsItemRound.className = "details-item__round";
+    detailsItemRound.style.marginLeft = position - 3.3 + "%";
+
+    detailsItemRange.append(detailsItemRound);
 
     if (!weatherDataObject[data].info) {
       const detailsItemFirst = document.createElement("span");
@@ -60,6 +81,7 @@ export const createCardWeatherData = (data, index) => {
       ].join(" ");
       detailsItemDesc.append(detailsItemFirst, detailsItemSecond);
     }
+
     detailsItemInfoCustom.append(detailsItemRange, detailsItemDesc);
   }
 
