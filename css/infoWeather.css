@@ -1,0 +1,49 @@
+.info-weather {
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.info-weather__city {
+  margin-bottom: 8px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium-title);
+  line-height: var(--line-height-additional);
+  text-align: center;
+}
+
+.info-weather__date {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.info-weather__time {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.info-weather__degrees {
+  margin-bottom: 64px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-big-title);
+  line-height: var(--line-height-one);
+  text-align: center;
+}
+
+.info-weather__cloud {
+  margin-bottom: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.info-weather__cloud span {
+  font-weight: var(--font-weight-primary);
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+}
+
+.info-weather__feels {
+  text-align: center;
+}

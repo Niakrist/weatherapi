@@ -1,5 +1,6 @@
 import { weatherDataObject } from "./mockData/mockWeatherData.js";
 
+// Рассчитываем куда поставить кружочек и вырез под ним
 const setPositionRound = (min, max, val) => {
   const onePercent = (Number(max) - Number(min)) / 100;
   const interval = Number(val) - Number(min);

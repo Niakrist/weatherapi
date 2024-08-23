@@ -1,0 +1,20 @@
+.footer {
+  padding: 32px;
+  text-align: center;
+}
+
+.footer__text {
+  font-weight: var(--font-weight-primary);
+  font-size: var(--font-size-small-title);
+  line-height: var(--line-height-slider);
+  text-align: center;
+  color: var(--white-color);
+}
+
+.footer__text a {
+  text-decoration: underline;
+}
+
+.footer__text a:hover {
+  text-decoration: none;
+}

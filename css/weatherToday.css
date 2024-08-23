@@ -1,0 +1,7 @@
+.weather-today {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--white-color);
+}
