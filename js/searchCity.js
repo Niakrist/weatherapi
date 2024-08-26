@@ -54,6 +54,8 @@ export const searchCity = () => {
         "Отправка формы заблокирована для вывода текста в консоль из первой таски"
       );
       console.log(searchCityInpit.value);
+      searchCityInpit.value = "";
+      searchCityInpit.blur();
     }
   });
 };

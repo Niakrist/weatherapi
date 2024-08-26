@@ -35,9 +35,10 @@
   left: 0;
   bottom: 0px;
   height: 2px;
-  width: 0;
+  width: 0%;
   background-color: var(--text-color-link);
   transition: width 0.1s ease;
+  border-radius: 10px;
 }
 
 .menu-slider__link:hover,
@@ -77,6 +78,7 @@
   gap: 16px;
   flex-wrap: nowrap;
   overflow: hidden;
+  mask: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 3.64%);
 }
 
 .weather-slider__item {
