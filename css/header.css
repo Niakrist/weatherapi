@@ -36,6 +36,13 @@
   .header__saerch-form {
     width: 409px;
   }
+  .saerch-form__input {
+    line-height: 1.14286;
+    font-size: var(--fonst-size-media-small);
+  }
+  .saerch-form__input::placeholder {
+    font-size: var(--fonst-size-media-small);
+  }
 }
 
 @media (max-width: 639px) {

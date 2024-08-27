@@ -5,8 +5,11 @@
 .slider__menu,
 .menu-slider__list {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 32px;
+}
+.menu-slider__list {
+  align-items: center;
 }
 
 .menu-slider {
@@ -21,6 +24,7 @@
 }
 
 .menu-slider__link {
+  display: block;
   padding-bottom: 5px;
   color: var(--text-color-link);
   font-size: var(--font-size-small-title);
@@ -151,7 +155,9 @@
   .weather-slider__list {
     gap: 12px;
   }
+}
 
+@media (max-width: 885px) {
   .weather-slider__item {
     flex-direction: column;
     min-width: 73px;

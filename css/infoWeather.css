@@ -86,14 +86,15 @@
     margin-bottom: 4px;
     line-height: 1.14286;
   }
-  .info-weather__time {
+  .info-weather__time,
+  .info-weather__degrees {
     font-size: var(--fonst-size-media-small);
     margin-bottom: 16px;
     line-height: 1.14286;
   }
   .info-weather__degrees {
     font-size: var(--font-size-media-big-title);
-    margin-bottom: 16px;
+    line-height: var(--line-height-one);
   }
 
   .info-weather__cloud {

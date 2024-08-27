@@ -18,3 +18,19 @@
 .footer__text a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 1023px) {
+  .footer {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 16px;
+  }
+  .footer__text {
+    font-size: var(--font-size-media-small-title);
+    line-height: 1.33333;
+  }
+}
