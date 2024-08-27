@@ -2,6 +2,7 @@ import { createCardWeatherData } from "./createCardWeatherData.js";
 import { createWeatherSlider } from "./createWeatherSlider.js";
 import { weatherDataObject } from "./mockData/mockWeatherData.js";
 import { searchCity } from "./searchCity.js";
+import { toggleLogoDesctopMobile } from "./toggleLogoDesctopMobile.js";
 
 const menuSliderList = document.querySelector(".menu-slider__list");
 const menuSliderLinks = document.querySelectorAll(".menu-slider__link");
@@ -39,5 +40,6 @@ menuSliderList.addEventListener("click", (e) => {
   }
 });
 
+toggleLogoDesctopMobile();
 const el = document.querySelector(".details-item__range");
 console.log(el);

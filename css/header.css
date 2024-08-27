@@ -2,9 +2,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   padding: 32px;
 }
 
 .header__saerch-form {
   width: 506px;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 24px;
+  }
+  .header__saerch-form {
+    width: 601px;
+  }
+}
+
+@media (max-width: 885px) {
+  .header__saerch-form {
+    width: 483px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 16px;
+  }
+  .header__logo-img {
+    width: 32px;
+    height: 32px;
+  }
+  .header__saerch-form {
+    width: 409px;
+  }
+}
+
+@media (max-width: 639px) {
+  .header__saerch-form {
+    width: 263px;
+  }
 }

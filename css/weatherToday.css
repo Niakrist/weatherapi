@@ -5,3 +5,20 @@
   gap: 16px;
   color: var(--white-color);
 }
+
+@media (max-width: 1023px) {
+  .weather-today {
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .weather-today {
+    padding: 16px;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

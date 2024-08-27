@@ -14,6 +14,14 @@
   --line-height-slider: 1.25;
   --line-height-additional: 1.33333;
 
+  /* fonts-media */
+  --fonst-size-media-small: 14px;
+  --font-size-media-medium-title: 16px;
+  --font-size-media-big-title: 56px;
+  --font-size-media-small-title: 12px;
+  --font-size-media-value: 22px;
+  --font-size-media-additional: 10px;
+
   /* colors */
   --text-color-primary: #202020;
   --text-color-additional: #393939;
