@@ -2,11 +2,6 @@
   padding: 8px;
   flex-grow: 1;
 }
-@media (max-width: 1023px) {
-  .info-weather {
-    min-width: 374px;
-  }
-}
 
 .info-weather__city {
   margin-bottom: 8px;
@@ -55,6 +50,7 @@
 
 @media (max-width: 1023px) {
   .info-weather {
+    min-width: 374px;
     padding: 0 8px;
   }
   .info-weather__time {

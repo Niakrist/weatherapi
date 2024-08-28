@@ -9,8 +9,9 @@ export const createWeatherSlider = ({ weather }) => {
 
   const createWElemsForSlider = (item) => {
     const oneDayItem = document.createElement("li");
-    oneDayItem.className = "weather-slider__item";
-    oneDayItem.style.minWidth = weather === "days" ? "270px" : "";
+    oneDayItem.className =
+      weather === "days" ? "weather-slider__item-day" : "weather-slider__item";
+    // oneDayItem.style.minWidth = weather === "days" ? "270px" : "";
 
     const oneDayTime = document.createElement("div");
     oneDayTime.className = "weather-slider__time";
