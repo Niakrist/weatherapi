@@ -232,7 +232,6 @@
   .weather-slider__time,
   .weather-slider__temp {
     font-size: var(--font-size-media-small-title);
-    line-height: var(--line-height-additional);
   }
 
   .weather-slider__img {
@@ -258,6 +257,7 @@
     max-width: 55px;
     flex-direction: column;
   }
+
   .slider__weather {
     grid-template-columns: 42px 1fr 42px;
   }

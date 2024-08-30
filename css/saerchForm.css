@@ -1,8 +1,8 @@
-.saerch-form {
+.search-form {
   border-radius: 8px;
 }
 
-.saerch-form__label {
+.search-form {
   overflow: hidden;
   display: flex;
   border-radius: 8px;
@@ -14,11 +14,11 @@
   transition: background-color 0.3s ease;
 }
 
-.saerch-form__label:hover {
+.search-form:hover {
   background-color: var(--bg-form-active);
 }
 
-.saerch-form__input {
+.search-form__input {
   width: 100%;
   background-color: transparent;
   border: none;
@@ -27,18 +27,19 @@
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);
   color: var(--text-color-primary);
+  font-variant-numeric: inherit;
 }
 
-.saerch-form__input::placeholder {
+.search-form__input::placeholder {
   color: var(--text-color-placeholder);
 }
 
-.saerch-form__input:focus {
+.search-form__input:focus {
   outline: 300px solid var(--bg-form-active);
   background-color: var(--bg-form-active);
 }
 
-.saerch-form__btn {
+.search-form__btn {
   background-color: transparent;
   border: none;
   outline: none;
@@ -69,7 +70,7 @@
 }
 
 @media (max-width: 1023px) {
-  .saerch-form__btn {
+  .search-form__btn {
     width: 24px;
     height: 24px;
     object-fit: contain;
@@ -77,16 +78,16 @@
 }
 
 @media (max-width: 767px) {
-  .saerch-form__label {
+  .search-form {
     padding: 8px 12px;
   }
 
-  .saerch-form__input,
-  .saerch-form__input::placeholder {
+  .search-form__input,
+  .search-form__input::placeholder {
     font-size: var(--fonst-size-media-small);
   }
 
-  .saerch-form__btn {
+  .search-form__btn {
     width: 16px;
     height: 16px;
     object-fit: contain;

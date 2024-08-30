@@ -7,7 +7,7 @@ import { observeResizeVidthView } from "./observeResizeVidthView.js";
 const menuSliderList = document.querySelector(".menu-slider__list");
 const menuSliderLinks = document.querySelectorAll(".menu-slider__link");
 
-const weatherTodaytodayDetailsList = document.querySelector(
+const weatherTodayDetailsList = document.querySelector(
   ".weather-today__details"
 );
 
@@ -20,9 +20,7 @@ const createBoardWeatherData = (weatherDataObject) => {
     return createCardWeatherData(data, index);
   });
 };
-weatherTodaytodayDetailsList.append(
-  ...createBoardWeatherData(weatherDataObject)
-);
+weatherTodayDetailsList.append(...createBoardWeatherData(weatherDataObject));
 
 // Первичное создания слайдера с прогнозом «на 24 часа»
 createWeatherSlider({ weather: "hours" });

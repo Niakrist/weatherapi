@@ -17,6 +17,7 @@
 }
 
 .info-weather__time {
+  display: block;
   margin-bottom: 64px;
   text-align: center;
 }
@@ -46,6 +47,15 @@
 
 .info-weather__feels {
   text-align: center;
+}
+
+@media (max-width: 1279px) {
+  .info-weather__time {
+    margin-bottom: 48px;
+  }
+  .info-weather__degrees {
+    margin-bottom: 48px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -80,13 +90,13 @@
   .info-weather__date {
     font-size: var(--fonst-size-media-small);
     margin-bottom: 4px;
-    line-height: 1.14286;
+    line-height: var(--line-height-info);
   }
   .info-weather__time,
   .info-weather__degrees {
     font-size: var(--fonst-size-media-small);
     margin-bottom: 16px;
-    line-height: 1.14286;
+    line-height: var(--line-height-info);
   }
   .info-weather__degrees {
     font-size: var(--font-size-media-big-title);
@@ -106,6 +116,6 @@
   .info-weather__cloud span,
   .info-weather__feels {
     font-size: var(--fonst-size-media-small);
-    line-height: 1.14286;
+    line-height: var(--line-height-info);
   }
 }

@@ -1,6 +1,6 @@
-const searcButton = document.querySelector(".saerch-form__btn");
-const searchCityInpit = document.querySelector(".saerch-form__input");
-const saerchForm = document.querySelector(".saerch-form");
+const searcButton = document.querySelector(".search-form__btn");
+const searchCityInpit = document.querySelector(".search-form__input");
+const searchForm = document.querySelector(".search-form");
 
 export const searchCity = () => {
   searcButton.addEventListener("click", (e) => {
@@ -37,16 +37,16 @@ export const searchCity = () => {
   });
 
   // Валидация
-  saerchForm.addEventListener("submit", (e) => {
+  searchForm.addEventListener("submit", (e) => {
     if (searchCityInpit.value.length < 1) {
       e.preventDefault();
       searchCityInpit.value = "Поле обязательное для заполнения";
       searchCityInpit.style.color = "red";
-      saerchForm.style.outline = "1px solid red";
+      searchForm.style.outline = "1px solid red";
       setTimeout(() => {
         searchCityInpit.value = "";
         searchCityInpit.style.color = "";
-        saerchForm.style.outline = "";
+        searchForm.style.outline = "";
       }, 500);
     } else {
       e.preventDefault();

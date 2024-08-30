@@ -31,6 +31,6 @@
   }
   .footer__text {
     font-size: var(--font-size-media-small-title);
-    line-height: 1.33333;
+    line-height: var(--line-height-additional);
   }
 }

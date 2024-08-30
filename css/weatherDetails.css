@@ -136,6 +136,10 @@
     font-size: var(--font-size-media-additional);
   }
 
+  .details-item:last-child .details-item__desc {
+    text-align: center;
+  }
+
   .details-item__range {
     height: 6px;
   }
